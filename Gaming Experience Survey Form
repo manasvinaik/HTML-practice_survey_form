@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Gaming Experience Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div>
+      <h1 id="title"> Gaming Experience Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us better our game</p>
+      <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label">Name <input id="name" name="name" type="text" placeholder="Sam" class="input" required/></label>
+        <label id="email-label">Email <input id="email" name="email" type="email" placeholder="123@surveyform.com" class="input"  required /></label>
+        <label id="number-label">Age(optional) <input id="number" name="age" type="number" min="10" max="120" placeholder="20" class="input" /></label>
+        <label for="dropdown">How often do you play our game in a week?
+          <select class="input" id="dropdown" name="dropdown">
+            <option value="">(select)</option>
+            <option value="1">Everyday</option>
+            <option value="2">Few Days A Week</option>
+            <option value="3">Once A Week</option>
+            <option value="4">Whenever I Get Time</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      
+        <label>Would you recommend our game to a friend?</label>
+        <label for="definitely"><input id="definitely" value="definitely" type="radio" name="recommend-choice" class="inline" />Definitely</label>
+        <label for="maybe"><input id="maybe" value="maybe" type="radio" name="recommend-choice" class="inline" />Maybe</label>
+        <label for="not-sure"><input id="not-sure" value="not-sure" type="radio" name="recommend-choice" class="inline" />Not Sure</label>
+      
+        <label for="likes">What do you like most about our game?
+          <select class="input"  id="likes" name="likes">
+            <option value="">Select an option</option>
+            <option value="1">The Graphics</option>
+            <option value="2">The Music</option>
+            <option value="3">The Challenges</option>
+            <option value="4">The Events</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <label for="rewards"><input id="rewards" value="rewards" type="checkbox" name="rewards" class="improvements" />More Rewards</label>
+        <label for="events"><input id="events" value="events" type="checkbox" name="events" class="improvements" />More Events</label>
+        <label for="challenges"><input id="challenges" value="challenges" type="checkbox" name="challenges" class="improvements" />Challenges need to be harder</label>
+        <label for="graphics"><input id="graphics" value="graphics" type="checkbox" name="graphics" class="improvements" />Graphics need to be better</label>
+      
+        <label for="bio">More Suggestions
+          <textarea class="input" id="suggestions" name="suggestions" rows="3" cols="30" placeholder="I think the music can be better..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </div>
+  </body>
+</html>
